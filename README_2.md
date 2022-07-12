@@ -64,6 +64,16 @@ It is mentioned that you can also incorporate some pagination into this CRUD and
 
 
 
+#### CORS Configuration
+I added an .env file with a dedicated port of 3031 but do not understand why this was necessary. The turorial states "HTTP Server use CORS configuration that accepts resource sharing restricted to some sites or ports, so we also need to configure port for our App."
+
+### Debugging
+critical error
+\*  TypeError: _serviceWorker__WEBPACK_IMPORTED_MODULE_5__.unregister is not a function
+
+Checked what version of Webpack was installed. Typed "npm view webpack version" in command line. Using v. 5.73.0.
+
+Found the fix for this and all the other subsequent less critical errors on the tuturial's github page.Another user of the tutorial added the necessary code to the serviceWorker.js file to get serviceWorker to function. 
 
 
 
